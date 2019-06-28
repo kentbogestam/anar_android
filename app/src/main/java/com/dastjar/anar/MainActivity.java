@@ -1,8 +1,7 @@
-package com.example.anar;
+package com.dastjar.anar;
 
 import android.Manifest;
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.support.v4.app.ActivityCompat;
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings=webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView.getSettings().setUserAgentString("Anar");
-        webView.loadUrl("https://anar-dev.dastjar.com/");
+        webView.loadUrl("https://anar.dastjar.com/");
 
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
